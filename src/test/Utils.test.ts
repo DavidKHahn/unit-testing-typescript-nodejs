@@ -34,10 +34,10 @@ describe('Utils test suite', () => {
         expect(expectedQuery).toBe(expectedQuery);
     })
 
-    test('test invalid URL', () => {
+    test.only('test invalid URL', () => {
         function expectError(){
             Utils.parseUrl('')
         }
-        expect(expectError).toThrowError();
+        expect(expectError).toThrowError('Empty url');
     })
 });
