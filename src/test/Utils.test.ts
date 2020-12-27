@@ -32,12 +32,19 @@ describe('Utils test suite', () => {
         }
         expect(parsedUrl.query).toEqual(expectedQuery);
         expect(expectedQuery).toBe(expectedQuery);
-    })
+    });
 
-    test.only('test invalid URL', () => {
+    test('test invalid URL', () => {
         function expectError(){
             Utils.parseUrl('')
         }
         expect(expectError).toThrowError('Empty url');
+    })
+
+    test.only('test invalid URL with arrow function', () => {
+
+        expect(() => {
+            Utils.parseUrl('')
+        }).toThrow('Empty url');
     })
 });
