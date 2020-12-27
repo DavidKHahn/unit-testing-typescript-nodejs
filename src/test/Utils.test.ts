@@ -41,7 +41,7 @@ describe('Utils test suite', () => {
         expect(expectError).toThrowError('Empty url');
     })
 
-    test.only('test invalid URL with arrow function', () => {
+    test('test invalid URL with arrow function', () => {
 
         expect(() => {
             Utils.parseUrl('')
@@ -55,4 +55,5 @@ describe('Utils test suite', () => {
             expect(error).toBeInstanceOf(Error);
             expect(error).toHaveProperty('message', 'Empty url!');
         }
+    });
 });
