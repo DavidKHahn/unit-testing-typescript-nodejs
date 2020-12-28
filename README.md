@@ -1,10 +1,13 @@
 # unit-testing-typescript-nodejs 🚀
 
 **NPM packages:**
+  - `npm install -save-dev typescript ts-node @types/node`
+  - `npm install -save-dev jest ts-jest`
 
-`test.todo("")`
-`test.skip()`
-`describe.only()`
+**Test Commands:**
+  - `test.todo("")`
+  - `test.skip()`
+  - `describe.only()`
 
 
 Useful source:
