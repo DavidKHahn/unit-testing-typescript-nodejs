@@ -6,5 +6,10 @@ NPM packages:
 Jest cmds:
 
 `test.todo("")`
-`test skip()`
+`test.skip()`
 `describe.only()`
+
+
+Useful source:
+
+- https://github.com/Microsoft/vscode-recipes/tree/master/debugging-jest-tests
